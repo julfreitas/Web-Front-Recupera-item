@@ -89,10 +89,10 @@
 }
 
 .stat-card {
-    background: #1e1e1e;
-    border-radius: 8px;
+    background:#1f2937 ;
+    border-radius: 16px;
     padding: 1.5rem;
-    border: 1px solid #333;
+    border: 1px solid #374151;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -109,12 +109,6 @@
     letter-spacing: 0.5px;
 }
 
-.stat-number {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #3b82f6;
-    display: block;
-}
 
 /* Ações rápidas */
 .painel-actions {

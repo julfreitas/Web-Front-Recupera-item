@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { cadastrarUsuario } from '../../service/usuarioService'; 
-import './cadastro.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { cadastrarUsuario } from "../../service/usuarioService";
+import "./cadastro.css";
 
 const Cadastro = () => {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,15 +17,15 @@ const Cadastro = () => {
     };
 
     try {
-        // AQUI, ele CHAMA a função que foi importada do serviço
-        await cadastrarUsuario(usuario);
-        alert('Usuário cadastrado com sucesso!');
-        // Limpa o formulário
-        setNome('');
-        setEmail('');
-        setSenha('');
+      // AQUI, ele CHAMA a função que foi importada do serviço
+      await cadastrarUsuario(usuario);
+      alert("Usuário cadastrado com sucesso!");
+      // Limpa o formulário
+      setNome("");
+      setEmail("");
+      setSenha("");
     } catch (error) {
-        alert('Erro ao cadastrar usuário. Verifique o console.');
+      alert("Erro ao cadastrar usuário. Verifique o console.");
     }
   };
 

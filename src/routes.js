@@ -9,7 +9,6 @@ import Perdi from './pages/Perdi'
 import Achei from './pages/Achei'
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
-import Footer from './components/Footer';
 import EsqueciSenha from './pages/esqueci-senha';
 import ConfirmarEmail from './pages/verificar_conta/index';
 import RedefinirSenha from './pages/redefinir_senha';
@@ -38,7 +37,6 @@ function RoutesApp(){
 
                 <Route path="*" element={<Erro/>}/>
             </Routes>
-            <Footer/>
         </BrowserRouter>
     )
 }

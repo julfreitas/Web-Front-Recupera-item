@@ -1,0 +1,76 @@
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: calc(100vh); 
+    background-color: #121212; 
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.cadastro-container > div {
+    background: #1e1e1e;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.cadastro-container h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.cadastro-container p {
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 1.5rem;
+}
+
+.cadastro-container button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.cadastro-container button {
+    background: linear-gradient(90deg, #1877f2, #6200ff);
+    color: #ffffff;
+    border: none;
+}
+
+.cadastro-container button:hover {
+    background: linear-gradient(90deg, #6200ff, #1877f2);
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cadastro-container div:has(h1:contains("Verificando...")) {
+    border-color: #1877f2; /* Borda azul para indicar atividade */
+}
+
+.cadastro-container div:has(h1:contains("E-mail Confirmado!")) {
+    border-color: #4CAF50; 
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.2); 
+}
+.cadastro-container div:has(h1:contains("E-mail Confirmado!")) h1 {
+    color: #4CAF50;
+}
+
+.cadastro-container div:has(h1:contains("Erro na Confirmação")) {
+    border-color: #f44336; 
+}
+.cadastro-container div:has(h1:contains("Erro na Confirmação")) h1 {
+    color: #f44336;
+}
